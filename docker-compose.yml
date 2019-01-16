@@ -1,0 +1,4 @@
+upmpdcli:
+  build: .
+  command: "-h serv"
+  net: "host"
