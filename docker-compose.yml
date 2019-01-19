@@ -1,4 +1,9 @@
-upmpdcli:
-  build: .
-  command: "-h serv"
-  net: "host"
+version: '3'
+
+services:
+  upmpdcli:
+    build:
+      context: .
+    container_name: upmpdcli
+    image: audiostation/upmpdcli
+    network_mode: "host"

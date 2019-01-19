@@ -7,6 +7,7 @@ RUN apk update \
   python2 \
   upmpdcli
 
+COPY upmpdcli.conf /etc/upmpdcli.conf
 RUN adduser -S upmpdcli
 
 EXPOSE 1900/udp
